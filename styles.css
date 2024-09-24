@@ -69,3 +69,13 @@ input {
   gap: 0.2rem;
   margin-top: 30px;
 }
+
+.result-box1,
+.result-box2 {
+  width: 100%;
+  padding: 0.5rem;
+  background: #2f3131;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #333, #222);
+  box-shadow: -4px -8px 18px #000000 inset, 4px 4px 16px #606060 inset;
+}
