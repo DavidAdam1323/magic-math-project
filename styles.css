@@ -46,3 +46,16 @@ body {
   display: block;
   color: #bebebe;
 }
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 10px;
+  color: #333;
+  font-size: 1.3rem;
+  outline: none;
+  border: solid #252525 .1rem;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #dfdfdf, #dedede);
+  box-shadow: -4px -8px 18px #707070 inset, 4px 4px 16px #f3f3f3 inset;
+}
