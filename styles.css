@@ -86,3 +86,11 @@ input {
   color: #898989;
   margin-bottom: 5px;
 }
+
+.total-bill-amount,
+.total-amount {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #28a745;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
