@@ -7,7 +7,47 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    
+    <div class="tip-calculator">
+      <div class="header">
+        <h1 class="app-title">QuickTip</h1>
+      </div>
+
+      <div class="input-group bill-input">
+        <label for="bill-amount" class="label">Bill Amount (£):</label>
+        <input
+          id="bill-amount"
+          type="number"
+          placeholder="50.00"
+          step="0.01"
+          min="0"
+        />
+      </div>
+
+      <div class="input-group tip-input">
+        <label for="tip-percentage" class="label">Tip Percentage (%):</label>
+        <input
+          id="tip-percentage"
+          type="number"
+          placeholder=" 15"
+          min="0"
+          max="100"
+        />
+      </div>
+
+      <div class="input-group people-input">
+        <label for="num-people" class="label">Number of People:</label>
+        <input id="num-people" type="number" placeholder="E.g: 4" min="1" />
+      </div>
+
+      <div class="result-group total-output">
+        <h2 class="total-bill-label">Total Bill:</h2>
+        <p class="total-bill-amount">£0.00</p>
+      
+        <h2 class="total-per-person-label">Total Per Person:</h2>
+        <p class="total-amount">£0.00</p>
+      </div>
+      
+
     <script src="scripts.js"></script>
   </body>
 </html>
