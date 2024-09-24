@@ -13,3 +13,13 @@ body {
   align-items: center;
   height: 100vh;
 }
+
+/* Styling for 3D Effect */
+.tip-calculator {
+  padding: 30px;
+  width: 320px;
+  text-align: center;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #333, #222);
+  box-shadow: -4px -8px 18px #000000 inset, 4px 4px 16px #606060 inset;
+}
