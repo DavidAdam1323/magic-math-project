@@ -23,3 +23,13 @@ body {
   background: linear-gradient(145deg, #333, #222);
   box-shadow: -4px -8px 18px #000000 inset, 4px 4px 16px #606060 inset;
 }
+
+.app-title {
+  padding: 0.5rem;
+  font-size: 3rem;
+  color: #518bbb;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background: linear-gradient(145deg, #333, #222);
+  box-shadow: -4px -8px 18px #000000 inset, 4px 4px 16px #606060 inset;
+}
