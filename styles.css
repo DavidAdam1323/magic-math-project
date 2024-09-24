@@ -33,3 +33,9 @@ body {
   background: linear-gradient(145deg, #333, #222);
   box-shadow: -4px -8px 18px #000000 inset, 4px 4px 16px #606060 inset;
 }
+
+/* Input Groups */
+.input-group {
+  text-align: left;
+  margin: 20px 0;
+}
