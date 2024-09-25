@@ -53,7 +53,7 @@ tipPercentageInput.addEventListener("input", calculateTip);
 numPeopleInput.addEventListener("input", calculateTip);
 
 // Event listeners for navigation (Enter and Arrow keys)
-// Move the focus to the desiare input area: E.g., tipPercentageInput.focus() ✅
+// Move the focus to the desired input area: E.g., tipPercentageInput.focus() ✅
 billAmountInput.addEventListener("keydown", function (event) {
   if (event.key === "Enter" || event.key === "ArrowDown") {
     tipPercentageInput.focus();
@@ -63,10 +63,46 @@ billAmountInput.addEventListener("keydown", function (event) {
   }
 });
 
+tipPercentageInput.addEventListener("keydown", function (event) {
+  if (event.key === "Enter" || event.key === "ArrowDown") {
+    numPeopleInput.focus();
+  }
+  if (event.key === "ArrowUp") {
+    billAmountInput.focus();
+  }
+});
+
+numPeopleInput.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    // Exit the input field ✅
+    numPeopleInput.blur();
+  }
+  if (event.key === "ArrowUp") {
+    // Move focus back to the tip percentage field ✅
+    tipPercentageInput.focus();
+  }
+  if (event.key === "ArrowDown") {
+    // Loop focus back to the bill amount field ✅
+    billAmountInput.focus();
+  }
+});
+
 // Disable Arrow keys from changing the number input field values
 // Prevent the default action of incrementing/decrementing: E.g., event.preventDefault() ✅
-billAmountInput.addEventListener("keydown", function(event) {
+billAmountInput.addEventListener("keydown", function (event) {
   if (event.key === "ArrowUp" || event.key === "ArrowDown") {
-      event.preventDefault();
+    event.preventDefault();
+  }
+});
+
+tipPercentageInput.addEventListener("keydown", function (event) {
+  if (event.key === "ArrowUp" || event.key === "ArrowDown") {
+    event.preventDefault();
+  }
+});
+
+numPeopleInput.addEventListener("keydown", function (event) {
+  if (event.key === "ArrowUp" || event.key === "ArrowDown") {
+    event.preventDefault();
   }
 });
