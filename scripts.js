@@ -9,8 +9,8 @@
 const billAmountInput = document.querySelector("#bill-amount");
 const tipPercentageInput = document.querySelector("#tip-percentage");
 const numPeopleInput = document.querySelector("#num-people");
-const totalBillAmount = document.querySelector("#total-bill");
-const sharedBillPerPerson = document.querySelector("#shared-bill");
+const totalBillSpan = document.querySelector("#total-bill");
+const sharedBillSpan = document.querySelector("#shared-bill");
 
 // Function to calculate the bill and shared amount 
 //  Convert the bill amount input to a floating-point number ✅
@@ -28,5 +28,10 @@ function calculateTip () {
   const tipAmount = (tipPercentage / 100) * billAmount;
   const totalBill = billAmount + tipAmount;
   const sharedBill = totalBill / numPeople;
+
+//  Display the total bill rounded to two decimal places ✅
+//  Display the amount per person rounded to two decimal places ✅
+  totalBillSpan.textContent = totalBill.toFixed(2);
+  sharedBillSpan.textContent = sharedBill.toFixed(2);
 
 }
