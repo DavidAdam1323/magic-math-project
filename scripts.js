@@ -22,6 +22,12 @@ function calculateTip () {
   const tipPercentage = parseFloat(tipPercentageInput.value);
   const  numPeople = parseInt(numPeopleInput.value, 10);
 
+// Validation to ensure inputs are valid
+  if (isNaN(billAmount) || isNaN(tipPercentage) || isNaN(numPeople) || numPeople <= 0) {
+    alert("Please enter valid number for all filds!");
+    return;
+  };
+
 //  Calculate the tip amount: (tip percentage / 100) * bill amount ✅
 //  Calculate the total bill: bill amount + tip amount ✅
 //  Calculate the amount per person: total bill / number of people ✅
