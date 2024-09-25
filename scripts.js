@@ -21,4 +21,12 @@ function calculateTip () {
   const billAmount = parseFloat(billAmountInput.value);
   const tipPercentage = parseFloat(tipPercentageInput.value);
   const  numPeople = parseInt(numPeopleInput.value, 10);
+
+//  Calculate the tip amount: (tip percentage / 100) * bill amount ✅
+//  Calculate the total bill: bill amount + tip amount ✅
+//  Calculate the amount per person: total bill / number of people ✅
+  const tipAmount = (tipPercentage / 100) * billAmount;
+  const totalBill = billAmount + tipAmount;
+  const sharedBill = totalBill / numPeople;
+
 }
