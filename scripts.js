@@ -51,3 +51,22 @@ function calculateTip() {
 billAmountInput.addEventListener("input", calculateTip);
 tipPercentageInput.addEventListener("input", calculateTip);
 numPeopleInput.addEventListener("input", calculateTip);
+
+// Event listeners for navigation (Enter and Arrow keys)
+// Move the focus to the desiare input area: E.g., tipPercentageInput.focus() ✅
+billAmountInput.addEventListener("keydown", function (event) {
+  if (event.key === "Enter" || event.key === "ArrowDown") {
+    tipPercentageInput.focus();
+  }
+  if (event.key === "ArrowUp") {
+    numPeopleInput.focus();
+  }
+});
+
+// Disable Arrow keys from changing the number input field values
+// Prevent the default action of incrementing/decrementing: E.g., event.preventDefault() ✅
+billAmountInput.addEventListener("keydown", function(event) {
+  if (event.key === "ArrowUp" || event.key === "ArrowDown") {
+      event.preventDefault();
+  }
+});
