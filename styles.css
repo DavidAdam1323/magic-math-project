@@ -54,7 +54,7 @@ input {
   color: #333;
   font-size: 1.3rem;
   outline: none;
-  border: solid #252525 .1rem;
+  border: solid #252525 0.1rem;
   border-radius: 10px;
   background: linear-gradient(145deg, #dfdfdf, #dedede);
   box-shadow: -4px -8px 18px #707070 inset, 4px 4px 16px #f3f3f3 inset;
@@ -73,7 +73,7 @@ input {
 .result-box1,
 .result-box2 {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.8rem 0.5rem;
   background: #2f3131;
   border-radius: 10px;
   background: linear-gradient(145deg, #333, #222);
@@ -82,9 +82,9 @@ input {
 
 .total-bill-label,
 .total-per-person-label {
-  font-size: 1.3rem;
   color: #898989;
-  margin-bottom: 5px;
+  font-size: 1.3rem;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 .total-bill-amount,
