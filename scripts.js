@@ -1,4 +1,4 @@
-// Quick Tip Calculator Logic
+// TipCalc Calculator Logic
 
 //  Get the bill amount input ✅
 //  Get the tip percentage input ✅
