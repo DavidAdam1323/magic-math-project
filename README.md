@@ -4,11 +4,11 @@ TipCalc is a simple and intuitive bill-splitting calculator designed to help gro
 
 ### Live Demo
 
-Check out the live demo [here](https://davidadam1323.github.io/quick-tip-project/).
+Check out the live demo [here](https://davidadam1323.github.io/tip-calc-project/).
 
 ### Preview
 
-![Project Preview]()
+![Project Preview](images/1.png)
 
 ## Features
 
