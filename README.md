@@ -1,6 +1,6 @@
 # TipKalc
 
-TipKalc is a simple and intuitive bill-splitting calculator designed to help groups quickly and easily calculate the total bill, including tip, and share it evenly among friends. Whether you're dining out or splitting expenses, QuickTip makes it easy to determine how much each person owes, factoring in a customisable tip percentage.
+TipKalc is a simple and intuitive bill-splitting calculator designed to help groups quickly and easily calculate the total bill, including tip, and share it evenly among friends. Whether you're dining out or splitting expenses, TipKalc makes it easy to determine how much each person owes, factoring in a customisable tip percentage.
 
 ### Live Demo
 
